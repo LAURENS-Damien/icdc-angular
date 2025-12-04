@@ -57,3 +57,16 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Mesures collectés
+
+| Fonctionnalité         | Commande       | Description                            | Damien ordi perso | Damien ordi ICDC | Ben ordi perso | Ben ordi ICDC |
+|------------------------|----------------|----------------------------------------|-------------------|------------------|----------------|---------------|
+| Installer les packages | `npm install`  | Installe les dépendances du projet     |                   |                  |                |               |
+| Construire le projet   | `ng build`     | Lance le build du projet               |                   |                  |                |               |
+| Démarrer le serveur    | `ng serve`     | Lance le serveur de développement local|                   |                  |                |               |
+| Lancer les tests unit. | `ng test`      | Exécute les tests unitaires avec Vitest|                   |                  |                |               |
+| ouverture du terminal  |                | git bash dans l'IDE                    |                   |                  |                |               |
+| ouverture de cypress   | `cypress open` | dialog de cypress                      |                   |                  |                |               |
+
+Faire 5 mesures pour chaque cas.
