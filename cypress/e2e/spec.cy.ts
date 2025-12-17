@@ -1,5 +1,6 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://gitlab.serv.cdc.fr/')
+describe('My First Test', () => {
+  it('Visits the initial project page', () => {
+    cy.visit('/')
+    cy.contains('app is running')
   })
 })
