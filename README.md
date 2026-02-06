@@ -60,13 +60,13 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## Mesures collectés
 
-| Fonctionnalité         | Commande       | Description                            | Damien ordi perso | Damien ordi ICDC | Ben ordi perso | Ben ordi ICDC |
-|------------------------|----------------|----------------------------------------|-------------------|------------------|----------------|---------------|
-| Installer les packages | `npm install`  | Installe les dépendances du projet     |                   |                  |                |               |
-| Construire le projet   | `ng build`     | Lance le build du projet               |                   |                  |                |               |
-| Démarrer le serveur    | `ng serve`     | Lance le serveur de développement local|                   |                  |                |               |
-| Lancer les tests unit. | `ng test`      | Exécute les tests unitaires avec Vitest|                   |                  |                |               |
-| ouverture du terminal  |                | git bash dans l'IDE                    |                   |                  |                |               |
-| ouverture de cypress   | `cypress open` | dialog de cypress                      |                   |                  |                |               |
+| Fonctionnalité         | Commande                 | Description                                                                             | Damien ordi perso | Damien ordi ICDC | Ben ordi perso | Ben ordi ICDC |
+|------------------------|--------------------------|-----------------------------------------------------------------------------------------|-------------------|------------------|----------------|---------------|
+| Installer les packages | `npm install`            | Installe les dépendances du projet (suppression du node_modules avant chaque tentative) | 15.24s            |                  |                |               |
+| Construire le projet   | `ng build`               | Lance le build du projet                                                                | 3.81s             |                  |                |               |
+| Démarrer le serveur    | `ng serve`               | Lance le serveur de développement local                                                 | 3.35s             |                  |                |               |
+| Lancer les tests unit. | `ng test --no-watch`     | Exécute les tests unitaires avec Vitest                                                 | 5.28s             |                  |                |               |
+| ouverture du terminal  |                          | git bash dans l'IDE                                                                     | instantané        |                  |                |               |
+| tests cypress          | `npm run cypress:run`    | tests en mode run de cypress (le serveur Angular doit être démarré avant le lancement)  | 8.57s             |                  |                |               |
 
 Faire 5 mesures pour chaque cas.
