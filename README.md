@@ -60,13 +60,13 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## Mesures collectés
 
-| Fonctionnalité         | Commande                 | Description                                                                             | Damien ordi perso | Damien ordi ICDC | Ben ordi perso | Ben ordi ICDC |
-|------------------------|--------------------------|-----------------------------------------------------------------------------------------|-------------------|------------------|----------------|---------------|
-| Installer les packages | `npm install`            | Installe les dépendances du projet (suppression du node_modules avant chaque tentative) | 15.24s            |                  |                |               |
-| Construire le projet   | `ng build`               | Lance le build du projet                                                                | 3.81s             |                  |                |               |
-| Démarrer le serveur    | `ng serve`               | Lance le serveur de développement local                                                 | 3.35s             |                  |                |               |
-| Lancer les tests unit. | `ng test --no-watch`     | Exécute les tests unitaires avec Vitest                                                 | 5.28s             |                  |                |               |
-| ouverture du terminal  |                          | git bash dans l'IDE                                                                     | instantané        |                  |                |               |
-| tests cypress          | `npm run cypress:run`    | tests en mode run de cypress (le serveur Angular doit être démarré avant le lancement)  | 8.57s             |                  |                |               |
+| Fonctionnalité         | Commande                 | Description                                                                             | Damien ordi perso | Damien ordi ICDC (G11)             | Ben ordi perso | Ben ordi ICDC |
+|------------------------|--------------------------|-----------------------------------------------------------------------------------------|-------------------|------------------------------------|----------------|---------------|
+| Installer les packages | `npm install`            | Installe les dépendances du projet (suppression du node_modules avant chaque tentative) | 15.24s            | 1min15s (min 30s et max 2min31)    |                |               |
+| Construire le projet   | `ng build`               | Lance le build du projet                                                                | 3.81s             | 4.89s                              |                |               |
+| Démarrer le serveur    | `ng serve`               | Lance le serveur de développement local                                                 | 3.35s             | 4.45s                              |                |               |
+| Lancer les tests unit. | `ng test --no-watch`     | Exécute les tests unitaires avec Vitest                                                 | 5.28s             | 8.66s (min 6s48 et max 16s)        |                |               |
+| ouverture du terminal  |                          | git bash dans l'IDE                                                                     | instantané        | 5.5s (min1s39 et max 21s50)        |                |               |
+| tests cypress          | `npm run cypress:run`    | tests en mode run de cypress (le serveur Angular doit être démarré avant le lancement)  | 8.57s             | 1min03s (min 45s49 et max 2min06s) |                |               |
 
 Faire 5 mesures pour chaque cas.
