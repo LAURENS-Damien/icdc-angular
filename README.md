@@ -66,8 +66,9 @@ For more information on using the Angular CLI, including detailed command refere
 | Construire le projet   | `ng build`               | Lance le build du projet                                                                | 3.81s             | 4.89s                              | 3.53s          | 56.49s / 7.23s avec cache |
 | Démarrer le serveur    | `ng serve`               | Lance le serveur de développement local                                                 | 3.35s             | 4.45s                              | 2.91s          | 9.86s                     |
 | Lancer les tests unit. | `ng test --no-watch`     | Exécute les tests unitaires avec Vitest                                                 | 5.28s             | 8.66s (min 6s48 et max 16s)        | 2.63s          | 26.23s                    |
-| ouverture du terminal  |                          | git bash dans l'IDE                                                                     | instantané        | 5.5s (min1s39 et max 21s50)        | instantané     | 5.76s                     |
+| ouverture du terminal  |                          | git bash dans l'IDE                                                                     | instantané        | 5.5s (min1s39 et max 21s50)        | instantané     | 5.76s / 52.72s*           |
 | tests cypress          | `npm run cypress:run`    | tests en mode run de cypress (le serveur Angular doit être démarré avant le lancement)  | 8.57s             | 1min03s (min 45s49 et max 2min06s) | 4.13s          | 2min05 / 39s              |
 
 Faire 5 mesures pour chaque cas.
 
+\* Cette mesure est suspecte, il faudrait continuer les tests pour voir si elle se produit pour l'une des raisons suivantes : git non reconnu dans Jetbrais (le terminal est git bash), ou le fait que c'est git bash qui est configuré en terminal par défaut (est-ce que c'est plus rapide avec powershell ?) 
