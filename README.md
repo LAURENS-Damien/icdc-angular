@@ -60,14 +60,14 @@ For more information on using the Angular CLI, including detailed command refere
 
 ## Mesures collectés
 
-| Fonctionnalité         | Commande                 | Description                                                                             | Damien ordi perso | Damien ordi ICDC (G11)             | Ben ordi perso | Ben ordi ICDC (G10)       |
-|------------------------|--------------------------|-----------------------------------------------------------------------------------------|-------------------|------------------------------------|----------------|---------------------------|
-| Installer les packages | `npm install`            | Installe les dépendances du projet (suppression du node_modules avant chaque tentative) | 15.24s            | 1min15s (min 30s et max 2min31)    | 32.42s / 9.43s | 3min30 / 1min31           |
-| Construire le projet   | `ng build`               | Lance le build du projet                                                                | 3.81s             | 4.89s                              | 3.53s          | 56.49s / 7.23s avec cache |
-| Démarrer le serveur    | `ng serve`               | Lance le serveur de développement local                                                 | 3.35s             | 4.45s                              | 2.91s          | 9.86s                     |
-| Lancer les tests unit. | `ng test --no-watch`     | Exécute les tests unitaires avec Vitest                                                 | 5.28s             | 8.66s (min 6s48 et max 16s)        | 2.63s          | 26.23s / 45.27s           |
-| ouverture du terminal  |                          | git bash dans l'IDE                                                                     | instantané        | 5.5s (min1s39 et max 21s50)        | instantané     | 5.76s / 52.72s*           |
-| tests cypress          | `npm run cypress:run`    | tests en mode run de cypress (le serveur Angular doit être démarré avant le lancement)  | 8.57s             | 1min03s (min 45s49 et max 2min06s) | 4.13s          | 2min05 / 39s              |
+| Fonctionnalité         | Commande                 | Description                                                                             | Damien ordi perso | Damien ordi ICDC (G11)          | Ben ordi perso | Ben ordi ICDC (G10)       | Thomas VDI                          |
+|------------------------|--------------------------|-----------------------------------------------------------------------------------------|-------------------|---------------------------------|----------------|---------------------------|-------------------------------------|
+| Installer les packages | `npm install`            | Installe les dépendances du projet (suppression du node_modules avant chaque tentative) | 15.24s            | 1min15s (min 30s et max 2min31) | 32.42s / 9.43s | 3min30 / 1min31           | 1min14s (min 1min7s et max 1min38s) |
+| Construire le projet   | `ng build`               | Lance le build du projet                                                                | 3.81s             | 4.89s                           | 3.53s          | 56.49s / 7.23s avec cache | 3s45                                |
+| Démarrer le serveur    | `ng serve`               | Lance le serveur de développement local                                                 | 3.35s             | 4.45s                           | 2.91s          | 9.86s                     | 6s82                                |
+| Lancer les tests unit. | `ng test --no-watch`     | Exécute les tests unitaires avec Vitest                                                 | 5.28s             | 8.66s (min 6s48 et max 16s)     | 2.63s          | 26.23s / 45.27s           | 9s62                                |
+| ouverture du terminal  |                          | git bash dans l'IDE                                                                     | instantané        | 5.5s (min1s39 et max 21s50)     | instantané     | 5.76s / 52.72s*           | 3s25                                |
+| tests cypress          | `npm run cypress:run`    | tests en mode run de cypress (le serveur Angular doit être démarré avant le lancement)  | 8.57s             | 48s                             | 4.13s          | 2min05 / 39s              | 22s                                 |
 
 Faire 5 mesures pour chaque cas.
 
